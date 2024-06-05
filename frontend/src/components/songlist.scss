@@ -1,0 +1,71 @@
+.song-list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 30px;
+
+  .box {
+    margin-bottom: 16px;
+  }
+
+  .box3, .box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .alert {
+      width: 100%;
+    }
+
+    .button {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .dataTable {
+    display: flex;
+    flex-direction: column;
+
+    .dataTable-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .box1, .box4 {
+        flex: 1;
+        margin-bottom: 16px;
+        background-color:white;
+
+        @media (max-width: 40px) {
+          margin-bottom: 8px;
+        }
+      }
+
+      .box4 {
+        margin-left: 16px;
+
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .dataGrid {
+    width: 100%;
+
+    .MuiDataGrid-root {
+      overflow-x: auto;
+    }
+  }
+  .statics{
+    background-color: aqua;
+  }
+}
