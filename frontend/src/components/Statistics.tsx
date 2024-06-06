@@ -46,8 +46,8 @@ const Statistics: React.FC = () => {
         <AccordionDetails>
           <Typography component="div">
             <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 850 }} aria-label="simple table">
-                <TableHead>
+              <Table sx={{ minWidth: 850 }} aria-label="simple table" >
+                <TableHead className='thead'>
                   <TableRow>
                     <TableCell>Statistics</TableCell>
                     <TableCell align="left">Songs by Genre</TableCell>
@@ -55,9 +55,9 @@ const Statistics: React.FC = () => {
                     <TableCell align="left">Songs by Album</TableCell>
                   </TableRow>
                 </TableHead>
-                <TableBody>
-                  <TableRow>
-                    <TableCell align="left">
+                <TableBody className='tbody'>
+                  <TableRow className='tbody'>
+                    <TableCell  align="left">
                       <div>Total Songs: {totalSongs}</div>
                       <div>Total Artists: {totalArtists}</div>
                       <div>Total Albums: {totalAlbums}</div>

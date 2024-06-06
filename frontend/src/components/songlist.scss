@@ -8,14 +8,18 @@
   .box {
     margin-bottom: 16px;
   }
-
+// .box2{
+//   margin-left:55%;
+// }
   .box3, .box2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .alert {
-      width: 100%;
+      width: 25%;
+      padding-left: 20px;
+      margin-top: 10px;
     }
 
     .button {
@@ -28,6 +32,7 @@
   .dataTable {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     .dataTable-wrapper {
       display: flex;
@@ -42,6 +47,7 @@
         flex: 1;
         margin-bottom: 16px;
         background-color:white;
+        width: 80%;
 
         @media (max-width: 40px) {
           margin-bottom: 8px;
@@ -60,12 +66,53 @@
 
   .dataGrid {
     width: 100%;
-
     .MuiDataGrid-root {
       overflow-x: auto;
     }
+    .x{
+      background-color:#5AB2FF;
+      color: white;
+    }
   }
   .statics{
-    background-color: aqua;
+    font-size: 18px;
+    font-weight:bold;
+    margin-top: 40px;
+    .MuiTableCell-root {
+      border: 1px solid #ddd;
+    }
+  
+    .MuiTableRow-root {
+      border: 1px solid #ddd;
+    }
+    .MuiTableRow-root {
+      border: 1px solid #ddd;
+      color: black;
+    }
+    background-color:#FFEFEF;
+    width: 50%;
+    color: rgb(225, 9, 9);
+    border: 1px solid #ddd;
+    align-items: start;
+    align-content: start;
+    justify-content: start;
+    .thead{
+      background-color: #5AB2FF;
+      color: white;
+    }
+    .tbody{
+      background-color: rgb(120, 117, 117);
+      color: black;
+      margin-top:0;
+    }
+    .MuiTableCell-root{
+      color: white;
+    }
+  }
+  .typography{
+    background-color: #0B5EAD;
+    color:white;
+    width: 100%;
+    margin-bottom: 5px;
   }
 }
