@@ -26,7 +26,7 @@ Create a .env file in the backend directory and add your MongoDB URI and any oth
 
 touch .env
 Inside .env file:
-# put the folLowing code
+# put the following code
 MONGODB_URI=your_mongodb_uri
 PORT=3001
 Run the backend server:
