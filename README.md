@@ -31,9 +31,7 @@ MONGODB_URI=your_mongodb_uri
 PORT=3001
 Run the backend server:
 
-bash
-Copy code
-npm start
+npm run dev
 The backend server should now be running on http://localhost:3001.
 
 Frontend Installation
