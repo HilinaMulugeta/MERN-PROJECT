@@ -18,7 +18,7 @@ Make sure you have the following installed on your local development machine:
 
    ```bash
    git clone https://github.com/HilinaMulugeta/MERN-PROJECT.git
-   cd your-repo-name/backend
+   cd MERN-PROJECT/backend
 Install dependencies:
 npm install
 Set up environment variables:
