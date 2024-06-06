@@ -8,7 +8,8 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/music', { useNewUrlParser: true, useUnifiedTopology: true, bufferCommands: false });
+mongoose.connect( "mongodb+srv://HilinaMulugeta:mymernstack@cluster0.qfntrcf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"//mongodb://127.0.0.1:27017/music//
+, { bufferCommands: false });
 
 
 const songSchema = new mongoose.Schema({

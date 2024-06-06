@@ -50,14 +50,14 @@ const SongList: React.FC = () => {
   };
 
   const columns: GridColDef[] = [
-    { field: 'title', headerName: 'Title', flex: 1, minWidth: 150 },
-    { field: 'artist', headerName: 'Artist', flex: 1, minWidth: 150 },
-    { field: 'album', headerName: 'Album', flex: 1, minWidth: 150 },
-    { field: 'genre', headerName: 'Genre', flex: 1, minWidth: 150 },
+    { field: 'title', headerName: 'Title', flex: 1, minWidth: 150 ,headerClassName: 'x'},
+    { field: 'artist', headerName: 'Artist', flex: 1, minWidth: 150 ,headerClassName: 'x'},
+    { field: 'album', headerName: 'Album', flex: 1, minWidth: 150 ,headerClassName: 'x' },
+    { field: 'genre', headerName: 'Genre', flex: 1, minWidth: 150 ,headerClassName: 'x' },
     {
       field: 'action',
       headerName: 'Action',
-      flex: 1, minWidth: 150,
+      flex: 1, minWidth: 150,headerClassName: 'x',
       renderCell: (params) => (
         <div>
           <IconButton aria-label="edit" onClick={() => handleEdit(params.row._id)}>
