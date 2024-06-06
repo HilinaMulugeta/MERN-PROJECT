@@ -11,9 +11,7 @@ app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
+  useUnifiedTopology: true
 })
 .then(() => {
   console.log('Connected to MongoDB');
@@ -42,6 +40,20 @@ app.get('/songs', async (req, res) => {
   }
 });
 
+app.get('/songs/:id', async (req, res) => {
+  try {
+    const song = await Song.findById(req.params.id);
+    if (!song) {
+      return res.status(404).send({ message: 'Song not found' });
+    }
+    res.send(song);
+  } catch (error) {
+    console.error('Error fetching song:', error);
+    res.status(500).send({ error: 'Failed to fetch song' });
+  }
+});
+
+
 app.post('/songs', async (req, res) => {
   try {
     const song = new Song(req.body);
@@ -49,6 +61,16 @@ app.post('/songs', async (req, res) => {
     res.send(song);
   } catch (error) {
     res.status(500).send({ message: 'Error saving song', error });
+  }
+});
+
+app.post('/bulk-songs', async (req, res) => {
+  try {
+    const songs = await Song.insertMany(req.body);
+    res.status(201).send(songs);
+  } catch (error) {
+    console.error('Error inserting songs:', error);
+    res.status(500).send({ error: 'Failed to insert songs' });
   }
 });
 

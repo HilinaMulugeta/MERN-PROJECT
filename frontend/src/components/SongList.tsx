@@ -113,7 +113,7 @@ const SongList: React.FC = () => {
               columns={columns}
               initialState={{
                 pagination: {
-                  paginationModel: { page: 0, pageSize: 5 },
+                  paginationModel: { page: 0, pageSize: 10 },
                 },
               }}
               slots={{ toolbar: GridToolbar }}
@@ -125,10 +125,10 @@ const SongList: React.FC = () => {
               }}
               pageSizeOptions={[5, 10, 20, 30]}
               checkboxSelection
-              disableRowSelectionOnClick
-              disableDensitySelector
-              disableColumnFilter
-              disableColumnSelector
+              // disableRowSelectionOnClick
+              // disableDensitySelector
+              // disableColumnFilter
+              // disableColumnSelector
             />
             <SongFormModal open={isAddModalOpen} onClose={() => setAddModalOpen(false)} />
             {editingSong && (

@@ -4,7 +4,7 @@ import './footer.scss';
 const Footer = () => {
   return (
     <footer>
-      <p>©2024 mern stack project powered By Hilina Mulugeta Kassie. Phone:- +251980335070 email:- hilinamulugeta1557@gmail.com</p>
+      <p>©2024 MERN Stack project powered By Hilina Mulugeta Kassie. Phone: +251980335070 email: hilinamulugeta1557@gmail.com</p>
     </footer>
   );
 };
