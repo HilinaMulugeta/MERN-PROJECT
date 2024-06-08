@@ -4,17 +4,19 @@
   padding: 16px;
   padding-left: 20px;
   padding-right: 30px;
+  
 
   .box {
     margin-bottom: 16px;
   }
-// .box2{
-//   margin-left:55%;
-// }
+.box2{
+  margin-left:55%;
+}
   .box3, .box2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 70%;
 
     .alert {
       width: 25%;
@@ -90,8 +92,7 @@
       color: black;
     }
     background-color:#FFEFEF;
-    width: 50%;
-    color: rgb(225, 9, 9);
+    width: 70%;
     border: 1px solid #ddd;
     align-items: start;
     align-content: start;
@@ -101,7 +102,7 @@
       color: white;
     }
     .tbody{
-      background-color: rgb(120, 117, 117);
+      background-color: rgb(75, 99, 128);
       color: black;
       margin-top:0;
     }
