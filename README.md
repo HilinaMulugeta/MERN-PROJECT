@@ -27,7 +27,7 @@ Create a .env file in the backend directory and add your MongoDB URI and any oth
 touch .env
 Inside .env file:
 # put the following code
-MONGODB_URI=your_mongodb_uri
+MONGODB_URI=mongodb+srv://HilinaMulugeta:mymernstack@cluster0.qfntrcf.mongodb.net/?retryWrites=true&w=majority&appName=MERNapp
 PORT=3001
 Run the backend server:
 
